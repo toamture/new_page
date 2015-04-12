@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>首页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="files/base.min.css">
+<script src="files/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="files/product-mi4.min.css">
+<link rel="stylesheet" type="text/css" href="styles/common.css">
+</head>
+
+<body>
+<div class="J_mi4_content  mi4-content-feature hidetrans J_feature_body">
+	<div class="main J_feature_main">
+		<div class="slide mi4-content-feature-a turnBlack">
+			<!--<div class="feature-font-price"></div>-->
+            <!--<div class="feature-img J_feature_leftbotomani leftbottom-to-center-in">
+
+			</div>-->
+			<!--<div class="feature-forward J_feature_turndown"></div>-->
+            <div class="nav">
+                <div class="bar J_fixed_bar showbar ahz-head">
+                    <div class="container">
+                        <h2 class="ahz-head-leftCon">小米手机4</h2>
+                        <div class="ahz-head-rightCon J_head_rightCon_b">asdasdasds</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="slide mi4-content-feature-b">
+        	<a href="http://www.baidu.com" target="_blank" class="feature-img  hide J_feature_midani"></a>
+        </div>
+		<div class="slide mi4-content-feature-c">
+        	<div class="feature-img anihide J_feature_botmani">
+            	<em>
+                	<a href="#" target="_blank"><b style="background:url(images/index_03_bg_01.png) no-repeat;"></b><img src="images/pic_01.jpg" width="338" height="368" alt="" /></a>
+                    <a href="#" target="_blank"><b style="background:url(images/index_03_bg_01.png) no-repeat;"></b><img src="images/pic_01.jpg" width="338" height="368" alt="" /></a>
+                </em>
+                <i>
+                	<a href="#" target="_blank"><b style="background:url(images/index_03_bg_02.png) no-repeat;"></b><img src="images/pic_02.jpg" width="485" height="255" alt="" /></a>
+                    <a href="#" target="_blank"><img src="images/index_03_pic.jpg" width="485" height="226" alt="" /></a>
+                    <a href="#" target="_blank"><b style="background:url(images/index_03_bg_02.png) no-repeat;"></b><img src="images/pic_02.jpg" width="485" height="255" alt="" /></a>
+                </i>
+                <em>
+                	<a href="#" target="_blank"><b style="background:url(images/index_03_bg_01.png) no-repeat;"></b><img src="images/pic_01.jpg" width="338" height="368" alt="" /></a>
+                    <a href="#" target="_blank"><b style="background:url(images/index_03_bg_01.png) no-repeat;"></b><img src="images/pic_01.jpg" width="338" height="368" alt="" /></a>
+                </em>
+            </div>
+        </div>
+		<div class="slide mi4-content-feature-d">
+        	<em>
+            	<a href="#" target="_blank"><img src="images/index_04_pic_01.jpg" width="272" height="319" alt="" /></a>
+                <a href="#" target="_blank"><img src="images/index_04_pic_02.jpg" width="272" height="319" alt="" /></a>
+                <a href="#" target="_blank"><img src="images/index_04_pic_03.jpg" width="272" height="319" alt="" /></a>
+                <a href="#" target="_blank"><img src="images/index_04_pic_04.jpg" width="272" height="319" alt="" /></a>
+            </em>
+        </div>
+		<div class="slide mi4-content-feature-e">
+        	<em>
+            	<a href="#" target="_blank" class="view_qq"></a>
+                <a href="#" target="_blank" class="view_map"></a>
+            </em>
+        </div>
+	</div>
+	<ul class="nav-btns J_feature_nav">
+		<li class="current">
+			<b></b>
+		</li>
+		<li>
+			<b></b>
+		</li>
+		<li>
+			<b></b>
+		</li>
+		<li>
+			<b></b>
+		</li>
+		<li>
+			<b></b>
+		</li>
+        <em class="return_top"></em>
+	</ul>
+    
+</div>
+<script>
+	var runFlag1=0; 
+	var runFlag2=0;
+	var runFlag3=0;
+	var runFlag4=0;
+    var runFlag5 = 0;
+    var isMac= (navigator.userAgent.toLowerCase().indexOf("mac",0) != -1)?1:0;
+
+    if(isMac){ 
+    	var fontUrl="files/product-mi4.min(1).css";
+    	var fileref=document.createElement("link");
+			fileref.setAttribute("rel", "stylesheet");
+			fileref.setAttribute("type", "text/css");
+			fileref.setAttribute("href", fontUrl);
+			document.getElementsByTagName("head")[0].appendChild(fileref);
+
+    }
+	//运行的方法
+	var global={
+		TABS:["feature"]
+	};
+</script>
+<script>
+$(document).ready(function(){
+	$(".J_feature_botmani a").hover(
+		function () {
+			$(this).find("b").fadeIn("slow");
+		},
+		function () {
+			$(this).find("b").fadeOut("slow");
+		}
+	);
+});
+</script>
+<script type="text/javascript" src="files/imagesloaded.min.js"></script>
+<script type="text/javascript" src="files/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="files/productMi4a.min.js"></script>
+
+</body></html>

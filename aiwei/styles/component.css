@@ -1,0 +1,156 @@
+header {
+	width:100%;
+	height:232px;
+	text-align:center;
+	background:url(../images/list_header_bg.png) repeat-x;
+	overflow:hidden;
+	float:left;
+}
+
+header dl dd {
+	margin:8px 0 11px 0;
+}
+
+header dl dt {
+	margin:40px 0 41px 0;
+}
+
+.grid {
+	max-width: 1180px;
+	list-style: none;
+	margin: 70px auto;
+	padding: 0;
+}
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 0 15px 75px 15px;
+	width: 33.33%;
+	opacity: 0;
+}
+
+.grid li em {
+	background:url(../images/list_hover_bg.png) repeat;
+	position:absolute;
+	top:0;
+	display:none;
+}
+
+.grid li i {
+	background:url(../images/list_hover_pic.png) no-repeat center;
+	display:inline-block;
+	position:absolute;
+	top:0;
+}
+
+.grid li font {
+	width:100%;
+	background:#FFF;
+	border-bottom:2px solid #ebeef0;
+	display:inline-block;
+}
+
+.grid li font h1 {
+	width:100%;
+	padding:7px 0 0 0;
+	font-family:微软雅黑;
+	font-size:23px;
+	font-weight:normal;
+	color:#3d4c51;
+	line-height:42px;
+	text-align:center;
+}
+
+.grid li font h1 a {
+	display:inline;
+}
+
+.grid li font h2 {
+	width:100%;
+	font-family:微软雅黑;
+	font-size:11px;
+	font-weight:normal;
+	color:#cccccc;
+	line-height:12px;
+	text-align:center;
+}
+
+.grid li font b {
+	width:100%;
+	display:inline-block;
+	padding:18px 0 20px 0;
+	text-align:center;
+}
+
+.grid li font b a {
+	width:32px;
+	height:32px;
+	margin:0 5px;
+	overflow:hidden;
+	display:inline-block;
+	float:none;
+	background:none;
+}
+
+.bds_weixin {
+	background:url(../images/list_share.png) no-repeat !important;
+	background-position:0 0 !important;
+}
+
+.bds_weixin:hover {
+	background-position:0 -32px !important;
+}
+
+.bds_tsina {
+	background:url(../images/list_share.png) no-repeat !important;
+	background-position:-32px 0 !important;
+}
+
+.bds_tsina:hover {
+	background-position:-32px -32px !important;
+}
+
+.bds_tqq {
+	background:url(../images/list_share.png) no-repeat !important;
+	background-position:-64px 0 !important;
+}
+
+.bds_tqq:hover {
+	background-position:-64px -32px !important;
+}
+
+.bd_weixin_popup {
+	height:300px !important;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+/* Effect 1: opacity */
+.grid.effect-1 li.animate {
+	-webkit-animation: fadeIn 0.65s ease forwards;
+	animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
+
