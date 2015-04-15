@@ -3,7 +3,8 @@
 
 /*首页*/
 .J_feature_botmani em{
-	width:338px;
+	width:399px;
+	margin:0 1px 1px 0;
 	overflow:hidden;
 	float:left;
 }
@@ -31,12 +32,19 @@
 	float:left;
 }
 .J_feature_botmani b{
-	width:100%;
-	height:100%;
+	width:386px;
+	height:66px;
+	padding:0 0 0 13px;
+	background:url(../images/index_03_titlebg.png) no-repeat;
 	display:none;
 	position:absolute;
-	top:0;
+	font-size:16px;
+	font-weight:normal;
+	font-style:normal;
+	color:#FFF;
+	line-height:66px;
 	left:0;
+	bottom:0;
 }
 .mi4-content-feature-d em{
 	position:absolute;
@@ -142,14 +150,14 @@
 	.mi4-content-feature .mi4-content-feature-a.turnBlack{ background-image:url('../images/index_01.jpg');}
 }
 @media (max-width:1705px){
-	.nav .bar{height:50px;background-image:url(../images/mainbav_1x.png)}
+	.nav .bar{height:49px;background-image:url(../images/mainbav_1x.png)}
 	.nav .bar.showbar{bottom:-50px}
 	.ahz-head .ahz-head-leftCon{ width:151px; height:41px;float:left;padding:0px; margin:5px 0 0 25px;}
 	.ahz-head-leftCon a{width:95px;height:41px;background:url(../images/logo_1x.png) no-repeat;}
-	.ahz-head-nav{width:605px;height:50px;}
-	.ahz-head-nav a{width:120px;height:50px;}
+	.ahz-head-nav{width:605px;height:49px;}
+	.ahz-head-nav a{width:120px;height:49px;}
 	.ahz-head-nav a:hover{background:url(../images/mainbav_hover.png) no-repeat;}
-	.ahz-head .ahz-head-rightCon{height:19px;margin:15px 34px 0 0;}
+	.ahz-head .ahz-head-rightCon{height:19px;margin:13px 34px 0 0;}
 	.ahz-head-rightCon a{margin:0 0 0 15px;}
 }
 
