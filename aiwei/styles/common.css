@@ -111,8 +111,46 @@
 	overflow:hidden;
 	float:left;
 }
+.ahz-head-nav{
+	width:1200px;
+	height:99px;
+	overflow:hidden;
+	float:left;
+}
+.ahz-head-nav a{
+	width:239px;
+	height:99px;
+	margin:0 0 0 1px;
+	display:inline;
+	overflow:hidden;
+	float:left;
+}
+.ahz-head-nav a:hover{
+	background:url(../images/mainbav_hover.png) no-repeat;
+}
+.ahz-head-leftCon a{
+	width:190px;
+	height:82px;
+	background:url(../images/logo.png) no-repeat;
+	overflow:hidden;
+	float:left;
+}
+.ahz-head-rightCon a{
+	margin:0 0 0 25px;
+}
 @media (max-width:1260px){
 	.mi4-content-feature .mi4-content-feature-a.turnBlack{ background-image:url('../images/index_01.jpg');}
+}
+@media (max-width:1705px){
+	.nav .bar{height:50px;background-image:url(../images/mainbav_1x.png)}
+	.nav .bar.showbar{bottom:-50px}
+	.ahz-head .ahz-head-leftCon{ width:211px; height:41px;float:left;padding:0px; margin:5px 0 0 25px;}
+	.ahz-head-leftCon a{width:95px;height:41px;background:url(../images/logo_1x.png) no-repeat;}
+	.ahz-head-nav{width:605px;height:50px;}
+	.ahz-head-nav a{width:120px;height:50px;}
+	.ahz-head-nav a:hover{background:url(../images/mainbav_hover.png) no-repeat;}
+	.ahz-head .ahz-head-rightCon{height:19px;margin:15px 34px 0 0;float:right;}
+	.ahz-head-rightCon a{margin:0 0 0 15px;}
 }
 
 /*.mi4-content-feature-a dl{z-index:1;position:absolute;left:50%;width:100%;height:100px;margin-left:-50%;background-repeat:no-repeat;background-position:center center;background-image:url('../images/mainbav.jpg');background-image:-webkit-image-set(url('../images/mainbav_1x.jpg') 1x, url('../images/mainbav.jpg') 2x)}*/
