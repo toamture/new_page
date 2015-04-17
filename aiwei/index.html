@@ -49,9 +49,15 @@
 		<div class="slide mi4-content-feature-d">
         	<div class="feature-img anihide J_feature_camera">
             	<a href="#" target="_blank"><img src="images/index_04_pic_01.jpg" width="272" height="319" alt="" /></a>
-                <a href="#" target="_blank"><img src="images/index_04_pic_02.jpg" width="272" height="319" alt="" /></a>
-                <a href="#" target="_blank"><img src="images/index_04_pic_03.jpg" width="272" height="319" alt="" /></a>
-                <a href="#" target="_blank"><img src="images/index_04_pic_04.jpg" width="272" height="319" alt="" /></a>
+            </div>
+            <div class="feature-img1 anihide J_feature_camera">
+            	<a href="#" target="_blank"><img src="images/index_04_pic_02.jpg" width="272" height="319" alt="" /></a>
+            </div>
+            <div class="feature-img2 anihide J_feature_camera">
+            	<a href="#" target="_blank"><img src="images/index_04_pic_03.jpg" width="272" height="319" alt="" /></a>
+            </div>
+            <div class="feature-img3 anihide J_feature_camera">
+            	<a href="#" target="_blank"><img src="images/index_04_pic_04.jpg" width="272" height="319" alt="" /></a>
             </div>
         </div>
 		<div class="slide mi4-content-feature-e">
@@ -146,18 +152,12 @@ $(document).ready(function(){
 </script>
 <script type="text/javascript" src="files/imagesloaded.min.js"></script>
 <script type="text/javascript" src="files/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="files/productMi4a.min.js"></script>
+<script type="text/javascript" src="files/productMi4a.min1.js"></script>
 <script>
 $(".return_top").click(function(e) {
-    var b = this,
-	c = FeatureMain;
-	var d = "up";
-	if (!d) return !1;
-	$(".J_feature_nav").find("li").removeClass("current"), $(".J_feature_nav").find("li").eq(0).addClass("current");
-	var e = 0,
-	f = "translate3d(0px," + e + "00%,0px)";
-	$(".J_feature_main").css("-webkit-transform", f), $(".J_feature_main").css("-moz-transform", f), $(".J_feature_main").css("-ms-transform", f), $(".J_feature_main").css("-o-transform", f), $(".J_feature_main").css("transform", f);
-	location.hash = "#fea-one";
+	var a = FeaturePage,
+		b = FeatureMain;
+		b.SCREENINDEX = 0, a.update3d("downorup"), $(".J_feature_nav").siblings("li").removeClass("current"), $(".J_feature_nav li").eq(0).addClass("current");
 });
 </script>
 </body></html>

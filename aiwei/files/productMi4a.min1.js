@@ -343,9 +343,12 @@ var FeatureMiUtil = {
 		isFourScreen: function(a) {
 			if (3 === a) {
 				var b = function() {
-						$(".J_feature_camera").removeClass("anihide"), $(".J_feature_camera").addClass("topright-to-mid-in")
+						$(".feature-img").addClass("right-to-left1"),
+						$(".feature-img1").addClass("right-to-left2"),
+						$(".feature-img2").addClass("right-to-left3"),
+						$(".feature-img3").addClass("right-to-left4"), $(".J_feature_camera").removeClass("anihide");
 					};
-				setTimeout(b, 1200)
+				setTimeout(b, 1e3)
 			}
 		},
 		isFiveScreen: function(a) {
