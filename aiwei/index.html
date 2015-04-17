@@ -11,20 +11,22 @@
 <link rel="stylesheet" type="text/css" href="styles/common.css">
 </head>
 
-<body id="aaa">
+<body>
 <div class="J_mi4_content  mi4-content-feature hidetrans J_feature_body">
 	<div class="main J_feature_main">
 		<div class="slide mi4-content-feature-a turnBlack">
-			<!--<div class="feature-font-price"></div>-->
+			<div class="feature-font-price">
+            	All Dream Mania Stems From Their Obsessions<br /><em>所有对于梦想的狂热源于内心的执着</em>
+            </div>
             <!--<div class="feature-img J_feature_leftbotomani leftbottom-to-center-in">
 
 			</div>-->
-			<!--<div class="feature-forward J_feature_turndown"></div>-->
+			<div class="feature-forward J_feature_turndown"></div>
             <div class="nav">
                 <div class="bar J_fixed_bar showbar ahz-head">
                     <div class="container">
                         <h2 class="ahz-head-leftCon"><a href="#"></a></h2>
-                        <em class="ahz-head-nav"><a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a><a href="#5"></a></em>
+                        <em class="ahz-head-nav"><a href="#1" data-title="首页" data-rel="HOME">HOME</a><a href="#2" data-title="关于艾维" data-rel="ABOUT AIVIA">ABOUT AIVIA</a><a href="#3" data-title="作品展示" data-rel="DISPLAY WORKS">DISPLAY WORKS</a><a href="#4" data-title="服务流程" data-rel="SERVICE PROCESS">SERVICE PROCESS</a><a href="#5" data-title="联系艾维" data-rel="CONTACT AIVIA">CONTACT AIVIA</a></em>
                         <div class="ahz-head-rightCon J_head_rightCon_b"><a href="#"><img src="images/mainbav_weibo.png" /></a><a href="#"><img src="images/mainbav_weixin.png" /></a></div>
                     </div>
                 </div>
@@ -147,12 +149,21 @@ $(document).ready(function(){
 			$(this).find("b").fadeOut("slow");
 		}
 	);
+	movearraw();
+	$(".ahz-head-nav a").hover(
+		function(){
+			$(this).text($(this).data("title"));
+		},
+		function(){
+			$(this).text($(this).data("rel"));
+		}
+	)
 });
-
+function movearraw() { $(".J_feature_turndown").animate({ "margin-top": "223px" }, 700, function () { $(this).animate({ "margin-top": "229px" }, 700); movearraw(); }); }
 </script>
 <script type="text/javascript" src="files/imagesloaded.min.js"></script>
 <script type="text/javascript" src="files/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="files/productMi4a.min1.js"></script>
+<script type="text/javascript" src="files/productMi4a.min.js"></script>
 <script>
 $(".return_top").click(function(e) {
 	var a = FeaturePage,

@@ -192,6 +192,11 @@
 	height:99px;
 	margin:0 0 0 1px;
 	display:inline;
+	font-size:20px;
+	color:#FFF;
+	line-height:99px;
+	font-style:normal;
+	text-align:center;
 	overflow:hidden;
 	float:left;
 }
@@ -217,7 +222,7 @@
 	.ahz-head .ahz-head-leftCon{ width:151px; height:41px;float:left;padding:0px; margin:5px 0 0 25px;}
 	.ahz-head-leftCon a{width:95px;height:41px;background:url(../images/logo_1x.png) no-repeat;}
 	.ahz-head-nav{width:605px;height:49px;}
-	.ahz-head-nav a{width:120px;height:49px;}
+	.ahz-head-nav a{width:120px;height:49px;font-size:12px;line-height:49px;}
 	.ahz-head-nav a:hover{background:url(../images/mainbav_hover.png) no-repeat;}
 	.ahz-head .ahz-head-rightCon{height:19px;margin:13px 34px 0 0;}
 	.ahz-head-rightCon a{margin:0 0 0 15px;}
