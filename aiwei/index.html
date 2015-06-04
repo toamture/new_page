@@ -26,7 +26,14 @@
                 <div class="bar J_fixed_bar showbar ahz-head">
                     <div class="container">
                         <h2 class="ahz-head-leftCon"><a href="#"></a></h2>
-                        <em class="ahz-head-nav"><a href="#1" data-title="首页" data-rel="HOME">HOME</a><a href="#2" data-title="关于艾维" data-rel="ABOUT AIVIA">ABOUT AIVIA</a><a href="#3" data-title="作品展示" data-rel="DISPLAY WORKS">DISPLAY WORKS</a><a href="#4" data-title="服务流程" data-rel="SERVICE PROCESS">SERVICE PROCESS</a><a href="#5" data-title="资讯信息" data-rel="NEWS">NEWS</a><a href="#6" data-title="联系艾维" data-rel="CONTACT AIVIA">CONTACT AIVIA</a></em>
+                        <em class="ahz-head-nav">
+                            <i><a href="#1">HOME</a><a href="#1">首页</a></i>
+                            <i><a href="#2">ABOUT AIVIA</a><a href="#2">关于艾维</a></i>
+                            <i><a href="#3">DISPLAY WORKS</a><a href="#3">作品展示</a></i>
+                            <i><a href="#4">SERVICE PROCESS</a><a href="#4">服务流程</a></i>
+                            <i><a href="#5">NEWS</a><a href="#5">新闻资讯</a></i>
+                            <i><a href="#6">CONTACT AIVIA</a><a href="#6">联系艾维</a></i>
+                        </em>
                         <div class="ahz-head-rightCon J_head_rightCon_b"><a href="#"><img src="images/mainbav_weibo.png" /></a><a href="#"><img src="images/mainbav_weixin.png" /></a></div>
                     </div>
                 </div>
@@ -142,6 +149,31 @@
 </script>
 <script>
 $(document).ready(function(){
+	if (window.innerWidth){
+		var winWidth = window.innerWidth;
+	}else if ((document.body) && (document.body.clientWidth)){
+		var winWidth = document.body.clientWidth;
+	}
+	if(winWidth<1705){
+		$(".ahz-head-nav i").hover(
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "-49px"}, 300);
+			},
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
+			}
+		);
+	}else{
+		$(".ahz-head-nav i").hover(
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "-99px"}, 300);
+			},
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
+			}
+		);
+	}
+	
 	$(".J_feature_botmani a").hover(
 		function () {
 			$(this).find("b").fadeIn("slow");
