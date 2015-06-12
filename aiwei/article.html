@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>文章详细页</title>
+<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+<link rel="stylesheet" type="text/css" href="styles/works_article.css" />
+<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+<header>
+    <em><a href="/"></a></em>
+    <ul>
+        <li><a href="#1">HOME</a><a href="#1">首页</a></li>
+        <li><a href="#2">ABOUT AIVIA</a><a href="#2">关于艾维</a></li>
+        <li><a href="#3">DISPLAY WORKS</a><a href="#3">作品展示</a></li>
+        <li><a href="#4">SERVICE PROCESS</a><a href="#4">服务流程</a></li>
+        <li><a href="#5">NEWS</a><a href="#5">新闻资讯</a></li>
+        <li><a href="#6">CONTACT AIVIA</a><a href="#6">联系艾维</a></li>
+    </ul>
+    <i><a href="#"><img src="images/mainbav_weibo.png" /></a><a href="#"><img src="images/mainbav_weixin.png" /></a></i>
+</header>
+<div class="article_box">
+    <div class="article_cont">
+		<div class="article_title">
+			<h1>黄宏卸任后首亮相 幽默谐破被抓传言</h1>
+			<h2>2015-03-10</h2>
+		</div>
+		<div class="article_text">
+			近日，黄宏卸任八一厂厂长后首次亮相，而这一亮相也打破了坊间黄宏被抓的传闻，坊间为什么传黄宏被抓呢?
+黄宏在2015年3月3日，被免去八一电影制片厂厂长职务，之后便鲜有露面，有坊间传言说黄宏当天上午被辞职后，下午就被有关部门带走。
+但是近日黄宏的亮相似乎打破了该传闻。
+6月10日，黄宏在中国曲协“送欢笑”10周年走进北京东城“百姓周末大舞台”专场文艺演出上亮相，黄宏当天还是以主持人身份出席了该
+场活动，整个活动现场黄宏依然嬉笑怒骂，非常幽默诙谐，把现场观众逗得前仰后翻，看来说黄宏被抓多事有心人的不良用心了。<p></p><p style=" text-align:center"><img src="images/pic_20.jpg"></p>
+		</div>
+	</div>
+</div>
+<footer>
+    <div class="footer_a">
+        <dl>
+            <dd>AIVIA</dd>
+            <dt>TEL:400-0411-540</dt>
+            <dt>AIVIA@163.com</dt>
+        </dl>
+        <dl>
+            <dd>AIR WALK</dd>
+            <dt>TEL:400-0411-540</dt>
+            <dt>AIRWALK@163.com</dt>
+        </dl>
+        <dl>
+            <dd><a href="#">HOME</a></dd>
+            <dd><a href="#">ABOUT AIVIA</a></dd>
+            <dd><a href="#">DISPLAY WORKS</a></dd>
+            <dd><a href="#">SERVICE PROCESS</a></dd>
+            <dd><a href="#">NEWS</a></dd>
+            <dd><a href="#">CONTACT AIVIA</a></dd>
+        </dl>
+        <dl>
+            <dd>Service QQ：<a href="http://wpa.qq.com/msgrd?v=3&uin=718495187&site=qq&menu=no" target="_blank">718495187</a></dd>
+            <dd>web site: <a href="http://www.iaivia.com">http://www.iaivia.com</a></dd>
+        </dl>
+    </div>
+    <div class="footer_b">Copyright © 2015  iaivia.com  艾维婚礼定制 辽ICP备05025646号</div>
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script> 
+    $(document).ready(function(){
+        if (window.innerWidth){
+            var winWidth = window.innerWidth;
+        }else if ((document.body) && (document.body.clientWidth)){
+            var winWidth = document.body.clientWidth;
+        }
+        if(winWidth<1705){
+            $("header ul li").hover(
+                function () {
+                    $(this).find("a").eq(0).animate({ "margin-top": "-49px"}, 300);
+                },
+                function () {
+                    $(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
+                }
+            );
+        }else{
+            $("header ul li").hover(
+                function () {
+                    $(this).find("a").eq(0).animate({ "margin-top": "-99px"}, 300);
+                },
+                function () {
+                    $(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
+                }
+            );
+        }
+        
+        var this_h = "";
+        $(".list_cont dl dd").each(function(index) {
+            if(index == 0){
+                this_h = $(this).height();
+            }else{
+                if(this_h > $(this).height()){
+                    this_h = $(this).height();
+                }
+            }
+        });
+        $(".list_cont dl dd").height(this_h+"px");
+    });
+    $(window).resize(function(){
+        var this_h = "";
+        $(".list_cont dl dd").height("auto");
+        $(".list_cont dl dd").each(function(index) {
+            
+            if(index == 0){
+                this_h = $(this).height();
+            }else{
+                if(this_h > $(this).height()){
+                    this_h = $(this).height();
+                }
+            }
+        });
+        $(".list_cont dl dd").height(this_h+"px");
+    });
+</script>
+</body>
+</html>

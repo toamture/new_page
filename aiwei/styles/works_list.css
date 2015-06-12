@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/*图片列表页*/
 .cont_box{
 	width:100%;
 	float:left;
@@ -91,4 +93,73 @@
 }
 .list_cont dl dt em:hover{
 	background:#666;
+}
+
+/*文章列表页*/
+.article_list {
+	width:100%;
+	overflow:hidden;
+	float:left;
+}
+.article_list dd {
+	width:50%;
+	position:relative;
+	overflow:hidden;
+}
+.article_list dd em{
+	width:100%;
+	height:100%;
+	background:url(../images/mainbav_hover.png);
+	display:none;
+	overflow:hidden;
+	position:absolute;
+}
+.article_list dt {
+	width:50%;
+	height:100%;
+	padding:9% 0;
+	overflow:hidden;
+}
+.article_list dt em {
+	width:70%;
+	height:1em;
+	margin:0 0 0 10%;
+	font-size:1em;
+	color:#333;
+	line-height:1em;
+	overflow:hidden;
+	float:left;
+}
+.article_list dt h1 {
+	width:76%;
+	height:1.8em;
+	margin:0 0 0 10%;
+	font-size:1.9em;
+	font-weight:normal;
+	line-height:1.6em;
+	overflow:hidden;
+	float:left;
+}
+.article_list dt h1 a {
+	color:#333;
+}
+.article_list dt h1 a:hover {
+	color:#666;
+}
+.article_list dt h2 {
+	width:76%;
+	height:5.4em;
+	font-size:1em;
+	font-weight:normal;
+	margin:0 0 0 10%;
+	color:#656565;
+	line-height:1.8em;
+	overflow:hidden;
+	float:left;
+}
+@media (max-width:890px){
+	.article_list dd,
+	.article_list dt {
+		width:100%;
+	}
 }
