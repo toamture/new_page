@@ -18,32 +18,32 @@ li{
 	list-style-type:none;
 }
 
-.header{
+header{
 	width:100%;
 	height:99px;
 	background:url(../images/mainbav.png) no-repeat;
 }
-.header em{
+header em{
 	width:311px;
 	height:82px;
 	margin:9px 0 0 49px;
 	overflow:hidden;
 	float:left;
 }
-.header em a{
+header em a{
 	width:190px;
 	height:82px;
 	background:url(../images/logo.png) no-repeat;
 	overflow:hidden;
 	float:left;
 }
-.header ul{
+header ul{
 	width:1200px;
 	height:99px;
 	overflow:hidden;
 	float:left;
 }
-.header ul li{
+header ul li{
 	width:198px;
 	margin:0 0 0 1px;
 	display:inline;
@@ -53,38 +53,38 @@ li{
 	overflow:hidden;
 	float:left;
 }
-.header ul li a{
+header ul li a{
 	width:198px;
 	height:99px;
 	color:#FFF;
 	overflow:hidden;
 	float:left;
 }
-.header i{
+header i{
 	height:19px;
 	margin:43px 34px 0 0;
 	float:right;
 }
-.header i a{
+header i a{
 	margin:0 0 0 25px;
 }
-.footer{
+footer{
 	width:100%;
 	overflow:hidden;
 	float:left;
 }
-.footer .footer_a{
+footer .footer_a{
 	width:1200px;
 	height:154px;
 	margin:45px auto 0;
 }
-.footer .footer_a dl{
+footer .footer_a dl{
 	width:300px;
 	height:154px;
 	overflow:hidden;
 	float:left;
 }
-.footer .footer_a dl dd{
+footer .footer_a dl dd{
 	width:300px;
 	height:24px;
 	font-family:Lao UI;
@@ -93,13 +93,13 @@ li{
 	overflow:hidden;
 	float:left;
 }
-.footer .footer_a dl dd a{
+footer .footer_a dl dd a{
 	color:#FFF;
 }
-.footer .footer_a dl dd a:hover{
+footer .footer_a dl dd a:hover{
 	color:#64afc6;
 }
-.footer .footer_a dl dt{
+footer .footer_a dl dt{
 	width:300px;
 	height:24px;
 	font-family:Lao UI;
@@ -108,7 +108,7 @@ li{
 	overflow:hidden;
 	float:left;
 }
-.footer .footer_b{
+footer .footer_b{
 	width:100%;
 	height:37px;
 	overflow:hidden;
@@ -120,14 +120,39 @@ li{
 	font-size:12px;
 	color:#FFF;
 }
+.floatobj {
+	width:100%;
+	height:0px;
+	display:block;
+	position:relative;
+	margin:0 auto;
+}
+.float1 {
+	width:36px;
+	height:36px;
+	position:absolute;
+	right:20px;
+	top:750px;
+	z-index:99999999;
+}
+.float1 .float1_top{
+	width:36px;
+	height:36px;
+	background:url(../images/nav-btns.png) no-repeat -36px 0;
+	float:left;
+	overflow:hidden;
+}
+.float1 .float1_top:hover {
+	background:url(../images/nav-btns.png) no-repeat -36px -36px;
+}
 
 @media (max-width:1705px){
-	.header{height:49px;background-image:url(../images/mainbav_1x.png)}
-	.header em{ width:151px; height:41px;float:left;padding:0px; margin:5px 0 0 25px;}
-	.header em a{width:95px;height:41px;background:url(../images/logo_1x.png) no-repeat;}
-	.header ul{width:726px;height:49px;}
-	.header ul li{width:120px;font-size:12px;line-height:49px;}
-	.header ul li a{width:120px;height:49px;}
-	.header i{height:19px;margin:13px 34px 0 0;}
-	.header i a{margin:0 0 0 15px;}
+	header{height:49px;background-image:url(../images/mainbav_1x.png)}
+	header em{ width:151px; height:41px;float:left;padding:0px; margin:5px 0 0 25px;}
+	header em a{width:95px;height:41px;background:url(../images/logo_1x.png) no-repeat;}
+	header ul{width:726px;height:49px;}
+	header ul li{width:120px;font-size:12px;line-height:49px;}
+	header ul li a{width:120px;height:49px;}
+	header i{height:19px;margin:13px 34px 0 0;}
+	header i a{margin:0 0 0 15px;}
 }

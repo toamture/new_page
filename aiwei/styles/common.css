@@ -218,6 +218,16 @@
 .ahz-head-rightCon a{
 	margin:0 0 0 25px;
 }
+.index_photo_more {
+	width:399px;
+	height:220px;
+	background:url(../images/index_photo_more.png) no-repeat;
+	overflow:hidden;
+	float:left;
+}
+.index_photo_more:hover {
+	background:url(../images/index_photo_more.png) no-repeat 0 -220px;
+}
 @media (max-width:1260px){
 	.mi4-content-feature .mi4-content-feature-a.turnBlack{ background-image:url('../images/index_01.jpg');}
 }

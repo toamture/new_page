@@ -9,115 +9,102 @@
     <link rel="stylesheet" type="text/css" href="styles/works_article.css" />
 </head>
 <body>
-    <div class="header">
-        <em><a href="/"></a></em>
-        <ul>
-            <li><a href="#1">HOME</a><a href="#1">首页</a></li>
-            <li><a href="#2">ABOUT AIVIA</a><a href="#2">关于艾维</a></li>
-            <li><a href="#3">DISPLAY WORKS</a><a href="#3">作品展示</a></li>
-            <li><a href="#4">SERVICE PROCESS</a><a href="#4">服务流程</a></li>
-            <li><a href="#5">NEWS</a><a href="#5">新闻资讯</a></li>
-            <li><a href="#6">CONTACT AIVIA</a><a href="#6">联系艾维</a></li>
-        </ul>
-        <i><a href="#"><img src="images/mainbav_weibo.png" /></a><a href="#"><img src="images/mainbav_weixin.png" /></a></i>
+<header>
+	<em><a href="/"></a></em>
+	<ul>
+		<li><a href="#1">HOME</a><a href="#1">首页</a></li>
+		<li><a href="#2">ABOUT AIVIA</a><a href="#2">关于艾维</a></li>
+		<li><a href="#3">DISPLAY WORKS</a><a href="#3">作品展示</a></li>
+		<li><a href="#4">SERVICE PROCESS</a><a href="#4">服务流程</a></li>
+		<li><a href="#5">NEWS</a><a href="#5">新闻资讯</a></li>
+		<li><a href="#6">CONTACT AIVIA</a><a href="#6">联系艾维</a></li>
+	</ul>
+	<i><a href="#"><img src="images/mainbav_weibo.png" /></a><a href="#"><img src="images/mainbav_weixin.png" /></a></i>
+</header>
+<div class="cont_box">
+	<div class="list_1st">
+		<dl><dd>All Dream Mania Stems From Their Obsessions</dd><br><dt>所有对于梦想的狂热源于内心的执着</dt></dl>
+		<img src="images/pic_17.jpg" width="100%" alt="">
+	</div>
+	<div class="list_2nd">
+		<img src="images/pic_18.jpg" width="100%" alt="">
+		<img src="images/pic_19.jpg" width="100%" alt="">
+	</div>
+</div>
+<footer>
+	<div class="footer_a">
+		<dl>
+			<dd>AIVIA</dd>
+			<dt>TEL:400-0411-540</dt>
+			<dt>AIVIA@163.com</dt>
+		</dl>
+		<dl>
+			<dd>AIR WALK</dd>
+			<dt>TEL:400-0411-540</dt>
+			<dt>AIRWALK@163.com</dt>
+		</dl>
+		<dl>
+			<dd><a href="#">HOME</a></dd>
+			<dd><a href="#">ABOUT AIVIA</a></dd>
+			<dd><a href="#">DISPLAY WORKS</a></dd>
+			<dd><a href="#">SERVICE PROCESS</a></dd>
+			<dd><a href="#">NEWS</a></dd>
+			<dd><a href="#">CONTACT AIVIA</a></dd>
+		</dl>
+		<dl>
+			<dd>Service QQ：<a href="http://wpa.qq.com/msgrd?v=3&uin=718495187&site=qq&menu=no" target="_blank">718495187</a></dd>
+			<dd>web site: <a href="http://www.iaivia.com">http://www.iaivia.com</a></dd>
+		</dl>
+	</div>
+	<div class="footer_b">Copyright © 2015  iaivia.com  艾维婚礼定制 辽ICP备05025646号</div>
+</footer>
+<div class="floatobj"><!--两侧悬浮-->
+    <div class="float1">
+        <a href="javascript:;" class="float1_top"></a>
     </div>
-    <div class="cont_box">
-        <div class="list_1st">
-        	<img src="images/pic_17.jpg" width="100%" alt="">
-            <img src="images/pic_18.jpg" width="100%" alt="">
-            <img src="images/pic_19.jpg" width="100%" alt="">
-        </div>
-    </div>
-    <div class="footer">
-    	<div class="footer_a">
-            <dl>
-                <dd>AIVIA</dd>
-                <dt>TEL:400-0411-540</dt>
-                <dt>AIVIA@163.com</dt>
-            </dl>
-            <dl>
-                <dd>AIR WALK</dd>
-                <dt>TEL:400-0411-540</dt>
-                <dt>AIRWALK@163.com</dt>
-            </dl>
-            <dl>
-                <dd><a href="#">HOME</a></dd>
-                <dd><a href="#">ABOUT AIVIA</a></dd>
-                <dd><a href="#">DISPLAY WORKS</a></dd>
-                <dd><a href="#">SERVICE PROCESS</a></dd>
-                <dd><a href="#">NEWS</a></dd>
-                <dd><a href="#">CONTACT AIVIA</a></dd>
-            </dl>
-            <dl>
-                <dd>Service QQ：<a href="http://wpa.qq.com/msgrd?v=3&uin=718495187&site=qq&menu=no" target="_blank">718495187</a></dd>
-                <dd>web site: <a href="http://www.iaivia.com">http://www.iaivia.com</a></dd>
-            </dl>
-        </div>
-        <div class="footer_b">Copyright © 2015  iaivia.com  艾维婚礼定制 辽ICP备05025646号</div>
-    </div>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script> 
-        $(document).ready(function(){
-			if (window.innerWidth){
-				var winWidth = window.innerWidth;
-			}else if ((document.body) && (document.body.clientWidth)){
-				var winWidth = document.body.clientWidth;
+</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(function() {
+        $(window).resize(function() { goTop(); });
+        $(window).scroll(function() { goTop(); });
+    });
+	var this_top = $(".float1").position().top;
+    function goTop() {
+        $(".float1").stop().animate({ "top": $(window).scrollTop() <= 0 ? this_top : $(window).scrollTop() + this_top }, 600);
+    }
+    $(".float1_top").click(function(){
+		$("html,body").animate({scrollTop: $(this).parent().parent().parent().parent().offset().top}, 500);
+	})
+</script>
+<script> 
+$(document).ready(function(){
+	if (window.innerWidth){
+		var winWidth = window.innerWidth;
+	}else if ((document.body) && (document.body.clientWidth)){
+		var winWidth = document.body.clientWidth;
+	}
+	if(winWidth<1705){
+		$("header ul li").hover(
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "-49px"}, 300);
+			},
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
 			}
-			if(winWidth<1705){
-				$(".header ul li").hover(
-					function () {
-						$(this).find("a").eq(0).animate({ "margin-top": "-49px"}, 300);
-					},
-					function () {
-						$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
-					}
-				);
-			}else{
-				$(".header ul li").hover(
-					function () {
-						$(this).find("a").eq(0).animate({ "margin-top": "-99px"}, 300);
-					},
-					function () {
-						$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
-					}
-				);
+		);
+	}else{
+		$("header ul li").hover(
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "-99px"}, 300);
+			},
+			function () {
+				$(this).find("a").eq(0).animate({ "margin-top": "0"}, 300);
 			}
-			
-			var this_h = "";
-			$(".list_cont dl dd").each(function(index) {
-				if(index == 0){
-					this_h = $(this).height();
-				}else{
-					if(this_h > $(this).height()){
-						this_h = $(this).height();
-					}
-				}
-            });
-			$(".list_cont dl dd").height(this_h+"px");
-			$(".list_cont dl dd").hover(
-				function () {
-					$(this).find("em").show();
-				},
-				function () {
-					$(this).find("em").hide();
-				}
-			);
-        });
-        $(window).resize(function(){
-			var this_h = "";
-			$(".list_cont dl dd").height("auto");
-			$(".list_cont dl dd").each(function(index) {
-				
-				if(index == 0){
-					this_h = $(this).height();
-				}else{
-					if(this_h > $(this).height()){
-						this_h = $(this).height();
-					}
-				}
-            });
-			$(".list_cont dl dd").height(this_h+"px");
-        });
-    </script>
+		);
+	}
+	
+});
+</script>
 </body>
 </html>
